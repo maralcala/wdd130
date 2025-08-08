@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Michel Alcalá González | WDD 130 - HTML FORM</title>
+        <meta name="description" content="WDD 130 (Web Fundamentals) course homepage for and about Michel Alcalá González">
+        <meta name="author" content="Michel Alcalá González">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Michel Alcalá González | WDD 130 - HTML FORM</h1>
+        </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Enter Full Name:</label>
+                <input type="text" id="fullname" name="fullname"><br>
+                <label for="useremail">Enter Email:</label>
+                <input type="text" id="useremail" name="useremail">
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Google Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="explorer">Explorer</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet"><br>
+                <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Los Angeles California, Seattle Washington, Lehi Utah"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 | WDD 130 - HTML FORM |  Michel Alcalá González</p>
+    </footer>
+    </body>
+</html>
