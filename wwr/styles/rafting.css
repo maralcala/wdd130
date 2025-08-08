@@ -57,7 +57,7 @@ h1 {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 .hero article {
     position: absolute;
@@ -184,9 +184,9 @@ footer {
 
 footer p {
     grid-column: 2/5;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    
 }
 .socialmedia {
     grid-column: 5/6;
