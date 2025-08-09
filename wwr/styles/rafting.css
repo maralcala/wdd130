@@ -206,11 +206,6 @@ footer p {
     text-align: left;
     font-size: 1.4rem;
 }
-iframe {
-    grid-column: 3/4;
-    grid-row: 1/9;
-    
-}
 .titles {
     font-size: 1.2rem;
     color: var(--primary-color);
