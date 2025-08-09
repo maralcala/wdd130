@@ -31,10 +31,10 @@ nav, p, section, article {
     text-decoration: none;
     margin: 5px;
 }
-.hero {
+.hero, .hero2 {
     position: relative;
 }
-.hero img {
+.hero img, .hero2 img {
     display: block;
     width: 100%;
     height: auto;
@@ -51,7 +51,7 @@ h1 {
 }
 .hero article {
     position: absolute;
-    bottom: 120px;
+    bottom: 150px;
     padding: 5px;
     margin: 20px;
     text-align: left;
@@ -367,6 +367,28 @@ button:hover {
     padding-top: 50px;
     padding-bottom: 20px;
     width: auto;
-    
+}
 
+
+.hero2 h1 {
+    position: absolute;
+    top: 40%;
+    width: 30%;
+    margin-bottom: 0;
+    padding: 16px;
+    opacity: 1;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+.hero2 h2 {
+    position: absolute;
+    bottom: 25%;
+    width: 30%;
+    padding: 5px;
+    margin: 0;
+    opacity: 1;
+    text-align: center;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
 }
