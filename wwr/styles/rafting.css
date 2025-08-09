@@ -6,49 +6,39 @@
     --heading-font: "Contrail One", sans-serif;
     --text-font: "Alumni Sans Pinstripe", sans-serif;
 }
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: var(--text-font);
     color: var(--secondary-color);
 }
-
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
-
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
-
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
-
 .socialmedia a {
     text-decoration: none;
     margin: 5px;
 }
-
 .hero {
     position: relative;
 }
-
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
-
 h1 {
     position: absolute;
     top: 10px;
@@ -69,33 +59,29 @@ h1 {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
 }
-
 .hero article img {
     float: right;
     width: 90px;
     margin: 2px;
 }
-
 header {
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-items: center;
-    align-items: center;
-    
+    align-items: center;  
 }
 header img {
     height: 90px;
     box-shadow: 2px 2px 5px var(--accent1-color);
     align-items: center;
+    border-radius: 0.5rem;
 }
 nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;  
 }
-
 .nav-menu a {
     padding: 9px;
     margin: 0px;
@@ -104,7 +90,6 @@ nav {
     font-size: 1.7rem;
     
 }
-
 .history {
     display: grid;
     grid-gap: 10px;
@@ -122,7 +107,6 @@ nav {
     grid-column: 1/2;
     grid-row: 2/3;
 }
-
 .p2 {
     grid-column: 3/4;
     grid-row: 2/3;
@@ -143,7 +127,6 @@ nav {
 .adventure-heading {
     grid-column: 1/6;
     grid-row: 1/2;
-    
 }
 .rocks {
     grid-column: 1/2;
@@ -170,8 +153,11 @@ nav {
     grid-row: 2/3;
     width: 130px;
 }
-figcaption {
+figcaption, figure p {
     text-align: center;
+    margin: 5px;
+    padding: 8px;
+    font-size: 18px;
 }
 footer {
     background-color: var(--primary-color);
@@ -181,14 +167,197 @@ footer {
     justify-items: center;
     align-items: center;
 }
-
 footer p {
     grid-column: 2/5;
     font-size: 1.5rem;
     color: white;
-    
 }
 .socialmedia {
-    grid-column: 5/6;
+    grid-column: 5/6; 
+}
+.company-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+.column1 {
+    grid-column: 1/3;
+}
+.addy {
+    grid-row: 1/2;
+}
+.address {
+    grid-row: 2/3;
+    padding: 2px;
+    margin: 0;
+    text-align: left;
+    font-size: 1.4rem;
+}
+.phone {
+    grid-row: 3/4;
+}
+.email {
+    grid-row: 7/8;
+}
+.email-addy {
+    grid-row: 8/9;
+    padding: 2px;
+    margin: 0;
+    text-align: left;
+    font-size: 1.4rem;
+}
+iframe {
+    grid-column: 3/4;
+    grid-row: 1/9;
     
+}
+.titles {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    grid-column: 1/2;
+    margin-left: 0;
+    padding: 2px;
+    text-align: left;
+    text-shadow: 2px 2px rgb(230, 222, 222);
+}
+.number1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    font-size: 1.2rem;
+}
+.number2 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    font-size: 1.2rem;
+
+}
+.number3 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    font-size: 1.2rem;
+
+}
+.office {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.parking {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.event {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.number1, .number2, .number3 {
+    padding: 2px;
+    margin: 0;
+    text-align: left;
+}
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+.e {
+    grid-area: 1 / 1 / 2 / 4;
+    margin: 0;
+    background-color: var(--accent2-color);
+    width: 100%;
+    text-align: center;
+}   
+.raquel {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.benjamin {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.abigail {
+    grid-area: 2 / 3 / 3 / 4;
+}
+figure p {
+    font-size: 25px;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin: 5px;
+    padding: 0;
+}
+.raquel-pic {
+    width: 130px;
+    margin-left: 5px;
+    padding: 0;
+}
+.benja-pic {
+    width: 130px;
+    margin-left: 15px;
+    padding: 0;
+}
+.abi-pic {
+    width: 130px;
+    margin: 0;
+    padding: 0;
+}
+form {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 3px solid var(--accent1-color);
+    border-radius: 1rem;
+    background-color: rgb(184, 228, 243);
+    display: grid;
+    
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 3px solid var(--accent2-color);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 2em;
+}
+label {
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+input, textarea {
+    padding: 0.5rem;
+    margin-left: .5rem;
+    font-size: 1rem;
+    width: auto;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover {
+    background-color: darkgreen;
+}
+.form-item {
+    display: grid;
+}
+.column-2 {
+    grid-template-columns: 1fr 3fr;
+}
+.button-align {
+    text-align: center;
+    margin: 0.5rem;
 }
