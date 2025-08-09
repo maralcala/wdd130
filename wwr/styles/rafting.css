@@ -361,3 +361,11 @@ button:hover {
     text-align: center;
     margin: 0.5rem;
 }
+.contact-heading {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: auto;
+    
+
+}
